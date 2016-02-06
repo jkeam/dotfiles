@@ -29,6 +29,14 @@ Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
 Plugin 'benmills/vimux'
 Plugin 'tpope/vim-fugitive' " the ultimate git helper
 Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
+Plugin 'vim-airline/vim-airline' " cooler status bar for vi
+Plugin 'vim-airline/vim-airline-themes' " themes for cool vi status bar
+Plugin 'danro/rename.vim' " rename current file
+Plugin 'tpope/vim-surround'  " surround text object with stuff like brackets
+Plugin 'vim-scripts/tComment' " easy commenting
+Plugin 'rizzatti/dash.vim'    " integrate dash
+Plugin 'scrooloose/syntastic' " linter
+Plugin 'christoomey/vim-tmux-navigator' " VIM and Tmux integration
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'
@@ -36,6 +44,20 @@ Plugin 'chriskempson/base16-vim'
 " JavaScript plugins
 Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
+
+" Plugin configuration
+let g:airline#extensions#tabline#enabled = 1  " turn on airline
+
+" Configure syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -63,6 +85,4 @@ set t_Co=256
 let base16colorspace=256
 
 set background=dark
-" These do nothing.
-" " VI just takes whatever iTerm is set to.
-" "colorscheme base16-codeschool
+colorscheme base16-monokai
