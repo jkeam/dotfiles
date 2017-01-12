@@ -108,5 +108,5 @@ export PATH="$PATH:$MVN_HOME" # Add MVN_HOME
 
 # Android
 #   adds android to path, (android sdk and android avd)
-export ANDROID_HOME="~/Library/Android/sdk/tools/android"
-export PATH="$PATH:$ANDROID_HOME"
+export ANDROID_HOME="~/Library/Android/sdk"
+export PATH="$PATH:$ANDROID_HOME/tools"
