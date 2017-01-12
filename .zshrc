@@ -105,3 +105,8 @@ export JENV_ROOT="/usr/local/opt/jenv"
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export MVN_HOME=/Users/jonathankeam/bin/apache-maven-3.3.9/bin
 export PATH="$PATH:$MVN_HOME" # Add MVN_HOME
+
+# Android
+#   adds android to path, (android sdk and android avd)
+export ANDROID_HOME="~/Library/Android/sdk/tools/android"
+export PATH="$PATH:$ANDROID_HOME"
