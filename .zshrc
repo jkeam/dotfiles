@@ -54,7 +54,8 @@ plugins=(git bundler rails ruby rake osx sublime)
 
 # User configuration
 
-export PATH="/Users/jonathankeam/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+# if using rvm, move this line under all the rvm settings.  rvm selfishly wants to be first.
+export PATH="$PATH:/Users/jonathankeam/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -85,7 +86,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # rvm
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
