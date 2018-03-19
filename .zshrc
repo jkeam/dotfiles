@@ -98,6 +98,7 @@ source /usr/local/opt/chruby/share/chruby/auto.sh
 
 # jenv
 # To enable shims and autocompletion add to your profile:
+# http://www.jenv.be/
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 export JENV_ROOT="/usr/local/opt/jenv"
 
@@ -105,11 +106,24 @@ export JENV_ROOT="/usr/local/opt/jenv"
 [ -f /Users/jonathankeam/.travis/travis.sh ] && source /Users/jonathankeam/.travis/travis.sh
 
 # JAVA_HOME
-export JAVA_HOME="$(/usr/libexec/java_home)"
+# export JAVA_HOME="$(/usr/libexec/java_home)"
+# Java 8
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home
+# Java 7
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
 export MVN_HOME=/Users/jonathankeam/bin/apache-maven-3.3.9/bin
-export PATH="$PATH:$MVN_HOME" # Add MVN_HOME
+export PATH="$PATH:$MVN_HOME"
 
 # Android
 #   adds android to path, (android sdk and android avd)
-export ANDROID_HOME="~/Library/Android/sdk"
+export ANDROID_HOME="/Users/jonathankeam/Library/Android/sdk"
 export PATH="$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools"
+
+# python pyenv-virtualenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# go tools
+#   in particular goimports
+export GOPATH="/Users/jonathankeam/go/bin"
+export PATH="$PATH:$GOPATH"
