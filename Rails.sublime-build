@@ -1,0 +1,30 @@
+{
+  "selector": "source.ruby",
+  "cmd": ["source /Users/jonathankeam/.bashrc && chruby ruby-2.5.1 && ./bin/rails test ${file}"],
+  "working_dir": "${folder}",
+  "shell": true,
+
+  "variants": [
+    {
+      "name": "Bundle Install",
+      "cmd": ["source /Users/jonathankeam/.bashrc && chruby ruby-2.5.1 && bundle install"],
+      "working_dir": "${folder}",
+      "shell": true
+    },
+
+    {
+      "name": "Test Single File",
+      "cmd": ["source /Users/jonathankeam/.bashrc && chruby ruby-2.5.1 && ./bin/rails test ${file}"],
+      "working_dir": "${folder}",
+      "shell": true
+    },
+
+    {
+      "name": "Test All",
+      "cmd": ["source /Users/jonathankeam/.bashrc && chruby ruby-2.5.1 && ./bin/rails test"],
+      "working_dir": "${folder}",
+      "shell": true
+    },
+  ]
+}
+
