@@ -25,6 +25,13 @@
       "working_dir": "${folder}",
       "shell": true
     },
+
+    {
+      "name": "Stop Spring",
+      "cmd": ["source /Users/jonathankeam/.bashrc && chruby ruby-2.5.1 && ./bin/spring stop"],
+      "working_dir": "${folder}",
+      "shell": true
+    }
   ]
 }
 
