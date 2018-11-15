@@ -142,3 +142,6 @@ export EDITOR=vim
 
 # pretty history
 export HISTTIMEFORMAT='%F %T '
+
+# fastlane
+export PATH="$HOME/.fastlane/bin:$PATH"
