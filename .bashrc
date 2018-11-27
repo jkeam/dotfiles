@@ -62,3 +62,6 @@ export HISTTIMEFORMAT='%F %T '
 
 # fastlane
 export PATH="$HOME/.fastlane/bin:$PATH"
+
+# rust
+export PATH="$HOME/.cargo/bin:$PATH"
