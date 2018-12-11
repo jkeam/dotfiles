@@ -35,6 +35,7 @@ Plugin 'vim-scripts/tComment' " easy commenting
 Plugin 'rizzatti/dash.vim'    " integrate dash
 Plugin 'scrooloose/syntastic' " linter
 Plugin 'christoomey/vim-tmux-navigator' " VIM and Tmux integration
+Plugin 'mileszs/ack.vim' " Integration with ack
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'
