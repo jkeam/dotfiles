@@ -90,3 +90,10 @@ colorscheme base16-monokai
 " => Custom Ignore for ctrl-p (fuzzy find files)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Call silver_searcher (ag command, like grep/ack, override Ack)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
