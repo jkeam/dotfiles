@@ -1,4 +1,3 @@
-" Jon Keam's Configs
 " size of tab
 set tabstop=4
 
@@ -10,7 +9,6 @@ set expandtab
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
-" End Jon Keams
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -86,3 +84,8 @@ let base16colorspace=256
 
 set background=dark
 colorscheme base16-monokai
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Custom Ignore for ctrl-p (fuzzy find files)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
