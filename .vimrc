@@ -48,6 +48,7 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'tpope/vim-bundler'    " bundler
 Plugin 'tpope/vim-rails'      " rails
 Plugin 'tpope/vim-dispatch'   " async process
+Plugin 'janko-m/vim-test'     " test runner
 
 " Plugin configuration
 let g:airline#extensions#tabline#enabled = 1  " turn on airline
