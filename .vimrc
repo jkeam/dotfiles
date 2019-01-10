@@ -44,6 +44,11 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 
+" Rails plugins
+Plugin 'tpope/vim-bundler'    " bundler
+Plugin 'tpope/vim-rails'      " rails
+Plugin 'tpope/vim-dispatch'   " async process
+
 " Plugin configuration
 let g:airline#extensions#tabline#enabled = 1  " turn on airline
 
