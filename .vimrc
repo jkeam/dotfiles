@@ -91,6 +91,8 @@ let base16colorspace=256
 
 set background=dark
 colorscheme base16-monokai
+" if unable to find monokai, can use default-dark
+" colorscheme base16-default-dark
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Custom Ignore for ctrl-p (fuzzy find files)
