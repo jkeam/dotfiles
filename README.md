@@ -18,6 +18,6 @@ Collection of my dotfiles.
 
 7.  VI
   - Remap esc to caps lock
-  - Create ~/.vimrc ike from this repo
+  - Create ~/.vimrc like from this repo
   - `vim +PluginInstall +qall`
 
