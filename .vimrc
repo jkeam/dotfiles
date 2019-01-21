@@ -50,6 +50,9 @@ Plugin 'tpope/vim-rails'      " rails
 Plugin 'tpope/vim-dispatch'   " async process
 Plugin 'janko-m/vim-test'     " test runner
 
+" Golang plugins
+Plugin 'fatih/vim-go'
+
 " Plugin configuration
 let g:airline#extensions#tabline#enabled = 1  " turn on airline
 
