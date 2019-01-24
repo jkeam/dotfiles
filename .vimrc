@@ -108,3 +108,10 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|sv
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Change ruby checker
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:syntastic_ruby_checkers          = ['rubocop', 'mri']
+" let g:syntastic_ruby_rubocop_exec      = '/Users/jonathankeam/.gem/ruby/2.5.3/bin/rubocop'
+let g:syntastic_ruby_rubocop_args      = '--force-exclusion'
