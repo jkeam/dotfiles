@@ -41,8 +41,7 @@ Plugin 'mileszs/ack.vim' " Integration with ack
 Plugin 'chriskempson/base16-vim'
 
 " JavaScript plugins
-Plugin 'pangloss/vim-javascript'
-Plugin 'jelera/vim-javascript-syntax'
+Plugin 'othree/yajs.vim'
 
 " Rails plugins
 Plugin 'tpope/vim-bundler'    " bundler
