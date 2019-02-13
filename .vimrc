@@ -54,6 +54,7 @@ Plugin 'fatih/vim-go'
 
 " Plugin configuration
 let g:airline#extensions#tabline#enabled = 1  " turn on airline
+let g:airline_theme='bubblegum'
 
 " Configure syntastic
 set statusline+=%#warningmsg#
@@ -111,6 +112,11 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Change ruby checker
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:syntastic_ruby_checkers          = ['rubocop', 'mri']
+let g:syntastic_ruby_checkers          = ['mri', 'rubocop']
 " let g:syntastic_ruby_rubocop_exec      = '/Users/jonathankeam/.gem/ruby/2.5.3/bin/rubocop'
 let g:syntastic_ruby_rubocop_args      = '--force-exclusion'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => NerdTree configs
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:NERDTreeNodeDelimiter = "\u00a0"
