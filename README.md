@@ -16,8 +16,13 @@ Collection of my dotfiles.
 
 6.  Setup new ssh keys
 
-7.  VI
+7.  Install golang
+
+8.  Install rust
+
+9.  VI
   - Remap esc to caps lock
+  - Install Vundle
   - Create ~/.vimrc like from this repo
   - `vim +PluginInstall +qall`
 
