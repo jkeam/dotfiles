@@ -36,6 +36,7 @@ Plugin 'rizzatti/dash.vim'    " integrate dash
 Plugin 'scrooloose/syntastic' " linter
 Plugin 'christoomey/vim-tmux-navigator' " VIM and Tmux integration
 Plugin 'mileszs/ack.vim' " Integration with ack
+Plugin 'sickill/vim-monokai'  " Colorscheme
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'
@@ -93,7 +94,7 @@ set t_Co=256
 let base16colorspace=256
 
 set background=dark
-colorscheme base16-monokai
+colorscheme monokai
 " if unable to find monokai, can use default-dark
 " colorscheme base16-default-dark
 
