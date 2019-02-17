@@ -50,7 +50,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(git)
-plugins=(git bundler rails ruby rake osx sublime)
+plugins=(git bundler rails ruby rake osx sublime chruby yarn node docker)
 
 # User configuration
 
