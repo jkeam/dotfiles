@@ -37,6 +37,7 @@ Plugin 'scrooloose/syntastic' " linter
 Plugin 'christoomey/vim-tmux-navigator' " VIM and Tmux integration
 Plugin 'mileszs/ack.vim' " Integration with ack
 Plugin 'sickill/vim-monokai'  " Colorscheme
+Plugin 'airblade/vim-gitgutter' " Git gutter
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'
