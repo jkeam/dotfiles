@@ -37,8 +37,9 @@ Plugin 'scrooloose/syntastic' " linter
 Plugin 'christoomey/vim-tmux-navigator' " VIM and Tmux integration
 Plugin 'mileszs/ack.vim' " integration with ack
 Plugin 'chriskempson/base16-vim' " colorschemes
-Plugin 'sickill/vim-monokai'  " Colorscheme
-Plugin 'airblade/vim-gitgutter' " Git gutter
+Plugin 'sickill/vim-monokai'  " colorscheme
+Plugin 'airblade/vim-gitgutter' " git gutter
+Plugin 'terryma/vim-multiple-cursors'  " multi cursors
 
 " JavaScript plugins
 Plugin 'othree/yajs.vim'
@@ -95,6 +96,7 @@ let base16colorspace=256
 set background=dark
 colorscheme monokai
 " if unable to find monokai, can use default-dark
+" or can use base16 theme below
 " colorscheme base16-default-dark
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
