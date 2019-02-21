@@ -27,18 +27,16 @@ Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
 Plugin 'benmills/vimux'
 Plugin 'tpope/vim-fugitive' " the ultimate git helper
 Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
+Plugin 'tpope/eunuch'         " shell commands
+Plugin 'tpope/vim-surround'  " surround text object with stuff like brackets
 Plugin 'vim-airline/vim-airline' " cooler status bar for vi
 Plugin 'vim-airline/vim-airline-themes' " themes for cool vi status bar
-Plugin 'danro/rename.vim' " rename current file
-Plugin 'tpope/vim-surround'  " surround text object with stuff like brackets
 Plugin 'vim-scripts/tComment' " easy commenting
 Plugin 'rizzatti/dash.vim'    " integrate dash
 Plugin 'scrooloose/syntastic' " linter
 Plugin 'christoomey/vim-tmux-navigator' " VIM and Tmux integration
-Plugin 'mileszs/ack.vim' " Integration with ack
-
-" colorschemes
-Plugin 'chriskempson/base16-vim'
+Plugin 'mileszs/ack.vim' " integration with ack
+Plugin 'chriskempson/base16-vim' " colorschemes
 
 " JavaScript plugins
 Plugin 'othree/yajs.vim'
@@ -120,3 +118,8 @@ let g:syntastic_ruby_rubocop_args      = '--force-exclusion'
 " => NerdTree configs
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:NERDTreeNodeDelimiter = "\u00a0"
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Custom mappings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <C-o> :NERDTreeToggle<CR>
