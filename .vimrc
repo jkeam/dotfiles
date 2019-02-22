@@ -27,7 +27,7 @@ Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
 Plugin 'benmills/vimux'
 Plugin 'tpope/vim-fugitive' " the ultimate git helper
 Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
-Plugin 'tpope/eunuch'         " shell commands
+Plugin 'tpope/vim-eunuch'         " shell commands
 Plugin 'tpope/vim-surround'  " surround text object with stuff like brackets
 Plugin 'vim-airline/vim-airline' " cooler status bar for vi
 Plugin 'vim-airline/vim-airline-themes' " themes for cool vi status bar
