@@ -10,6 +10,29 @@ set expandtab
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" Configure ALE - must be done before ALE is loaded
+let g:ale_lint_on_save = 1
+let g:ale_fix_on_save = 1
+let g:ale_completion_enabled = 1
+let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
+let g:ale_linters = {'jsx': ['stylelint', 'eslint']}
+" ruby
+let g:ale_ruby_rubocop_executable = '~/.gem/ruby/2.6.1/bin/rubocop'
+let g:ale_ruby_rubocop_options = '--force-exclusion'
+let g:ale_ruby_ruby_executable = '~/.rubies/ruby-2.6.1/bin/ruby'
+
+" let g:ale_ruby_brakeman_options = ''
+" let g:ale_ruby_reek_show_context = 0
+" let g:ale_ruby_reek_show_wiki_link = 0
+
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['standard', 'eslint'],
+\   'rust': ['rustc'],
+\   'ruby': ['rubocop'],
+\   'go': ['gofmt', 'golint', 'go vet'],
+\}
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -33,7 +56,7 @@ Plugin 'vim-airline/vim-airline' " cooler status bar for vi
 Plugin 'vim-airline/vim-airline-themes' " themes for cool vi status bar
 Plugin 'vim-scripts/tComment' " easy commenting
 Plugin 'rizzatti/dash.vim'    " integrate dash
-Plugin 'scrooloose/syntastic' " linter
+Plugin 'w0rp/ale' " linter
 Plugin 'christoomey/vim-tmux-navigator' " VIM and Tmux integration
 Plugin 'mileszs/ack.vim' " integration with ack
 Plugin 'chriskempson/base16-vim' " colorschemes
@@ -56,17 +79,6 @@ Plugin 'fatih/vim-go'
 " Plugin configuration
 let g:airline#extensions#tabline#enabled = 1  " turn on airline
 let g:airline_theme='bubblegum'
-
-" Configure syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -110,13 +122,6 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|sv
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Change ruby checker
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:syntastic_ruby_checkers          = ['mri', 'rubocop']
-" let g:syntastic_ruby_rubocop_exec      = '/Users/jonathankeam/.gem/ruby/2.5.3/bin/rubocop'
-let g:syntastic_ruby_rubocop_args      = '--force-exclusion'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => NerdTree configs
