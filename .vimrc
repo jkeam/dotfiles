@@ -7,13 +7,19 @@ set shiftwidth=2
 " spaces instead of tabs
 set expandtab
 
+" turn on line numbers
+set number
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " Configure ALE - must be done before ALE is loaded
+let g:ale_sign_column_always = 1
 let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
+let g:ale_lint_on_enter = 1
+let g:ale_lint_on_text_changed = 'never'
 let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
 let g:ale_linters = {'jsx': ['stylelint', 'eslint']}
 " ruby
@@ -29,7 +35,6 @@ let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': ['standard', 'eslint'],
 \   'rust': ['rustc'],
-\   'ruby': ['rubocop'],
 \   'go': ['gofmt', 'golint', 'go vet'],
 \}
 
