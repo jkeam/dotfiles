@@ -20,8 +20,6 @@ let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 let g:ale_lint_on_enter = 1
 let g:ale_lint_on_text_changed = 'never'
-let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
-let g:ale_linters = {'jsx': ['stylelint', 'eslint']}
 " ruby
 let g:ale_ruby_rubocop_executable = '~/.gem/ruby/2.6.1/bin/rubocop'
 let g:ale_ruby_rubocop_options = '--force-exclusion'
@@ -31,11 +29,19 @@ let g:ale_ruby_ruby_executable = '~/.rubies/ruby-2.6.1/bin/ruby'
 " let g:ale_ruby_reek_show_context = 0
 " let g:ale_ruby_reek_show_wiki_link = 0
 
+let g:ale_linter_aliases = {
+      \'jsx': ['css', 'javascript'],
+      \'es6': ['javascript']
+\}
+let g:ale_linters = {
+      \'jsx': ['stylelint', 'eslint'],
+      \'javascript': ['standard', 'eslint']
+\}
 let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'javascript': ['standard', 'eslint'],
-\   'rust': ['rustc'],
-\   'go': ['gofmt', 'golint', 'go vet'],
+    \'*': ['remove_trailing_lines', 'trim_whitespace'],
+    \'javascript': ['standard', 'eslint'],
+    \'rust': ['rustc'],
+    \'go': ['gofmt', 'golint', 'go vet'],
 \}
 
 " set the runtime path to include Vundle and initialize
@@ -137,3 +143,8 @@ let g:NERDTreeNodeDelimiter = "\u00a0"
 " => Custom mappings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <C-o> :NERDTreeToggle<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Automatically treat .es6 extension files as javascript
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript
