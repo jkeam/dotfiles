@@ -136,7 +136,9 @@ export PATH="/usr/local/opt/sbt@0.13/bin:$PATH"
 
 # go
 export GOPATH="/Users/jonathankeam/go"
-export PATH="$PATH:$GOPATH/bin"
+export GOBIN="/Users/jonathankeam/go/bin"
+export GOSRC="/Users/jonathankeam/go/src"
+export PATH="$PATH:$GOBIN"
 
 export EDITOR=vim
 
