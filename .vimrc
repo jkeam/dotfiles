@@ -44,6 +44,8 @@ let g:ale_fixers = {
     \'go': ['gofmt', 'golint', 'go vet'],
 \}
 
+" set this to your rtp location
+set rtp+=/usr/local/bin/fzf
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -57,6 +59,8 @@ Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'kien/ctrlp.vim' " fuzzy find files
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plugin 'junegunn/fzf.vim' " faster fuzzy find files
 Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
 Plugin 'benmills/vimux'
 Plugin 'tpope/vim-fugitive' " the ultimate git helper
@@ -143,6 +147,7 @@ let g:NERDTreeNodeDelimiter = "\u00a0"
 " => Custom mappings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <C-o> :NERDTreeToggle<CR>
+map ; :Files<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Automatically treat .es6 extension files as javascript
