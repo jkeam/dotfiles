@@ -1,3 +1,6 @@
+" encoding
+set encoding=UTF-8
+
 " size of tab
 set tabstop=4
 
@@ -57,8 +60,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-Plugin 'kien/ctrlp.vim' " fuzzy find files
+" Plugin 'kien/ctrlp.vim' " fuzzy find files
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim' " faster fuzzy find files
 Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
@@ -78,6 +80,9 @@ Plugin 'chriskempson/base16-vim' " colorschemes
 Plugin 'sickill/vim-monokai'  " colorscheme
 Plugin 'airblade/vim-gitgutter' " git gutter
 Plugin 'terryma/vim-multiple-cursors'  " multi cursors
+" Plugin 'neoclide/coc.nvim'
+" Plugin 'ryanoasis/vim-devicons'   " nerdtree icons - nerd fonts
+Plugin 'mhinz/vim-startify'  " cool start screens
 
 " JavaScript plugins
 Plugin 'othree/yajs.vim'
