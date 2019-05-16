@@ -1,0 +1,10 @@
+{
+    "editor.fontSize": 20,
+    "editor.fontFamily": "'Menlo', 'Menlo Regular', 'Monaco', 'Monaco Nerd Font', 'Fira Code', 'Droid Sans Mono', 'monospace', 'Droid Sans Fallback'",
+    "editor.fontLigatures": true,
+    "workbench.colorTheme": "Flatland Monokai",
+    "eslint.packageManager": "yarn",
+    "editor.tabSize": 2,
+    "workbench.editor.enablePreviewFromQuickOpen": false
+ }
+    
