@@ -49,71 +49,52 @@ let g:ale_fixers = {
 
 " set this to your rtp location
 set rtp+=/usr/local/bin/fzf
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" Plugin 'kien/ctrlp.vim' " fuzzy find files
-Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plugin 'junegunn/fzf.vim' " faster fuzzy find files
-Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
-Plugin 'benmills/vimux'
-Plugin 'tpope/vim-fugitive' " the ultimate git helper
-Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
-Plugin 'tpope/vim-eunuch'         " shell commands
-Plugin 'tpope/vim-surround'  " surround text object with stuff like brackets
-Plugin 'vim-airline/vim-airline' " cooler status bar for vi
-Plugin 'vim-airline/vim-airline-themes' " themes for cool vi status bar
-Plugin 'vim-scripts/tComment' " easy commenting
-Plugin 'rizzatti/dash.vim'    " integrate dash
-Plugin 'w0rp/ale' " linter
-Plugin 'christoomey/vim-tmux-navigator' " VIM and Tmux integration
-Plugin 'mileszs/ack.vim' " integration with ack
-Plugin 'chriskempson/base16-vim' " colorschemes
-Plugin 'sickill/vim-monokai'  " colorscheme
-Plugin 'airblade/vim-gitgutter' " git gutter
-Plugin 'terryma/vim-multiple-cursors'  " multi cursors
-" Plugin 'neoclide/coc.nvim'
-" Plugin 'ryanoasis/vim-devicons'   " nerdtree icons - nerd fonts
-Plugin 'mhinz/vim-startify'  " cool start screens
+call plug#begin()
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim' " faster fuzzy find files
+Plug 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
+Plug 'benmills/vimux'
+Plug 'tpope/vim-fugitive' " the ultimate git helper
+Plug 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
+Plug 'tpope/vim-eunuch'         " shell commands
+Plug 'tpope/vim-surround'  " surround text object with stuff like brackets
+Plug 'vim-airline/vim-airline' " cooler status bar for vi
+Plug 'vim-airline/vim-airline-themes' " themes for cool vi status bar
+Plug 'vim-scripts/tComment' " easy commenting
+Plug 'rizzatti/dash.vim'    " integrate dash
+Plug 'w0rp/ale' " linter
+Plug 'christoomey/vim-tmux-navigator' " VIM and Tmux integration
+Plug 'mileszs/ack.vim' " integration with ack
+Plug 'chriskempson/base16-vim' " colorschemes
+Plug 'sickill/vim-monokai'  " colorscheme
+Plug 'airblade/vim-gitgutter' " git gutter
+Plug 'terryma/vim-multiple-cursors'  " multi cursors
+" Plug 'neoclide/coc.nvim'
+" Plug 'ryanoasis/vim-devicons'   " nerdtree icons - nerd fonts
+Plug 'mhinz/vim-startify'  " cool start screens
 
 " JavaScript plugins
-Plugin 'othree/yajs.vim'
+Plug 'othree/yajs.vim'
 
 " Rails plugins
-Plugin 'tpope/vim-bundler'    " bundler
-Plugin 'tpope/vim-rails'      " rails
-Plugin 'tpope/vim-dispatch'   " async process
-Plugin 'janko-m/vim-test'     " test runner
+Plug 'tpope/vim-bundler'    " bundler
+Plug 'tpope/vim-rails'      " rails
+Plug 'tpope/vim-dispatch'   " async process
+Plug 'janko-m/vim-test'     " test runner
 
 " Golang plugins
-Plugin 'fatih/vim-go'
+Plug 'fatih/vim-go'
 
-" Plugin configuration
+" Plug configuration
 let g:airline#extensions#tabline#enabled = 1  " turn on airline
 let g:airline_theme='bubblegum'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+call plug#end()            " required
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+filetype plugin indent on    " required
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
