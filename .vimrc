@@ -1,3 +1,7 @@
+" CVE-2019-12735
+set modelines=0
+set nomodeline
+
 " encoding
 set encoding=UTF-8
 
