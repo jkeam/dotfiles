@@ -115,9 +115,17 @@ export MVN_HOME=/Users/jonathankeam/dev/libraries/apache-maven-3.5.3/bin
 export PATH="$PATH:$MVN_HOME" # Add MVN_HOME
 
 # Android
-#   adds android to path, (android sdk and android avd)
+#   adds android to path, (android sdk and android avd and android ndk)
 export ANDROID_HOME="/Users/jonathankeam/Library/Android/sdk"
-export PATH="$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools"
+export ANDROID_SDK_ROOT="/Users/jonathankeam/Library/Android/sdk"
+export ANDROID_NDK_ROOT="/Users/jonathankeam/Library/Android/android-ndk-r20"
+export ANDROID_NDK_HOME="/Users/jonathankeam/Library/Android/android-ndk-r20"
+
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/build-tools/28.0.3
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
