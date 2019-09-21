@@ -150,3 +150,6 @@ export PATH="$HOME/.fastlane/bin:$PATH"
 
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
+
+#  yarn
+export PATH="$(yarn global bin):$PATH"
