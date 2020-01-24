@@ -1,0 +1,24 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jquery": true,
+    "commonjs": true,
+    "amd": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "globals": {
+    "dropzone": "readonly",
+    "Dropzone": "readonly",
+    "device": "readonly"
+  },
+  "rules": {
+    "no-underscore-dangle": [2, { "allowAfterThis": true }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  }
+}
+
