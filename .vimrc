@@ -143,3 +143,9 @@ map ; :Files<CR>
 " => Automatically treat .es6 extension files as javascript
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Windows GVIM specific configs
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" set guioptions=aegimLt
+" set guifont=Menlo\ Regular:h16
