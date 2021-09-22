@@ -58,7 +58,7 @@ call plug#begin()
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim' " faster fuzzy find files
 Plug 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
-Plug 'benmills/vimux'
+Plug 'benmills/vimux' " tmux integration
 Plug 'tpope/vim-fugitive' " the ultimate git helper
 Plug 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
 Plug 'tpope/vim-eunuch'         " shell commands
@@ -67,7 +67,7 @@ Plug 'vim-airline/vim-airline' " cooler status bar for vi
 Plug 'vim-airline/vim-airline-themes' " themes for cool vi status bar
 Plug 'vim-scripts/tComment' " easy commenting
 Plug 'rizzatti/dash.vim'    " integrate dash
-Plug 'w0rp/ale' " linter
+Plug 'dense-analysis/ale' " linter
 Plug 'christoomey/vim-tmux-navigator' " VIM and Tmux integration
 Plug 'mileszs/ack.vim' " integration with ack
 Plug 'chriskempson/base16-vim' " colorschemes
@@ -143,6 +143,7 @@ map ; :Files<CR>
 " => Automatically treat .es6 extension files as javascript
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
+autocmd BufRead,BufNewFile Vagrantfile setfiletype ruby
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Windows GVIM specific configs
