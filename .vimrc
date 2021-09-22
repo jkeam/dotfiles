@@ -73,7 +73,6 @@ Plug 'mileszs/ack.vim' " integration with ack
 Plug 'chriskempson/base16-vim' " colorschemes
 Plug 'sickill/vim-monokai'  " colorscheme
 Plug 'airblade/vim-gitgutter' " git gutter
-Plug 'terryma/vim-multiple-cursors'  " multi cursors
 " Plug 'neoclide/coc.nvim'
 " Plug 'ryanoasis/vim-devicons'   " nerdtree icons - nerd fonts
 Plug 'mhinz/vim-startify'  " cool start screens
