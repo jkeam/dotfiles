@@ -47,7 +47,7 @@ let g:ale_linters = {
 let g:ale_fixers = {
     \'*': ['remove_trailing_lines', 'trim_whitespace'],
     \'javascript': ['standard', 'eslint'],
-    \'rust': ['rustc'],
+    \'rust': ['rustfmt'],
     \'go': ['gofmt', 'golint', 'go vet'],
 \}
 
