@@ -137,6 +137,8 @@ let g:NERDTreeNodeDelimiter = "\u00a0"
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <C-o> :NERDTreeToggle<CR>
 map ; :Files<CR>
+" https://www.reddit.com/r/neovim/comments/petq61/neovim_060_y_not_yanking_line_but_to_end_of_line/
+nnoremap Y Y
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Automatically treat .es6 extension files as javascript
