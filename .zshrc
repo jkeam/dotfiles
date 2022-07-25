@@ -54,10 +54,6 @@ plugins=(git bundler rails ruby rake osx sublime chruby yarn node docker)
 
 # User configuration
 
-# if using rvm, move this line under all the rvm settings.  rvm selfishly wants to be first.
-export PATH="$PATH:/Users/jonathankeam/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
-
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -85,10 +81,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# rvm
-export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
@@ -96,56 +88,10 @@ export NVM_DIR="$HOME/.nvm"
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
-# jenv
-# To enable shims and autocompletion add to your profile:
-if which jenv > /dev/null; then eval "$(jenv init -)"; fi
-export JENV_ROOT="/usr/local/opt/jenv"
-
-# added by travis gem
-[ -f /Users/jonathankeam/.travis/travis.sh ] && source /Users/jonathankeam/.travis/travis.sh
-
-# JAVA_HOME
-#export JAVA_HOME="$(/usr/libexec/java_home)"
-# manually setting it to java 8 bc of play
-# Java 8
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home
-# Java 7
-#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
-export MVN_HOME=/Users/jonathankeam/dev/libraries/apache-maven-3.5.3/bin
-export PATH="$PATH:$MVN_HOME" # Add MVN_HOME
-
-# Android
-#   adds android to path, (android sdk and android avd and android ndk)
-export ANDROID_HOME="/Users/jonathankeam/Library/Android/sdk"
-export ANDROID_SDK_ROOT="/Users/jonathankeam/Library/Android/sdk"
-export ANDROID_NDK_ROOT="/Users/jonathankeam/Library/Android/android-ndk-r20"
-export ANDROID_NDK_HOME="/Users/jonathankeam/Library/Android/android-ndk-r20"
-
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=$PATH:$ANDROID_HOME/build-tools/28.0.3
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/jonathankeam/.nvm/versions/node/v8.7.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/jonathankeam/.nvm/versions/node/v8.7.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/jonathankeam/.nvm/versions/node/v8.7.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/jonathankeam/.nvm/versions/node/v8.7.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
-
-# python pyenv-virtualenv
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
-# hack to get me to run scala 11 for play
-export PATH="/usr/local/opt/scala@2.10/bin:$PATH"
-export PATH="/usr/local/opt/sbt@0.13/bin:$PATH"
-
 # go
-export GOPATH="/Users/jonathankeam/go"
-export GOBIN="/Users/jonathankeam/go/bin"
-export GOSRC="/Users/jonathankeam/go/src"
+export GOPATH="$HOME/go"
+export GOBIN="$HOME/go/bin"
+export GOSRC="$HOME/go/src"
 export PATH="$PATH:$GOBIN"
 
 export EDITOR=vim
@@ -154,10 +100,16 @@ export EDITOR=vim
 export HISTTIMEFORMAT='%F %T '
 
 # fastlane
-export PATH="$HOME/.fastlane/bin:$PATH"
+# export PATH="$HOME/.fastlane/bin:$PATH"
 
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
 #  yarn
 export PATH="$(yarn global bin):$PATH"
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# quarkus
+source <(quarkus completion)
