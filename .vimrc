@@ -151,3 +151,16 @@ autocmd BufRead,BufNewFile Vagrantfile setfiletype ruby
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set guioptions=aegimLt
 " set guifont=Menlo\ Regular:h16
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Neovide
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:neovide_cursor_vfx_mode = "pixiedust"
+set guifont=MesloLGS\ Nerd\ Font\ Mono:h18
+set mouse=a
+tmap <D-v> <C-w>"+
+nnoremap <D-v> "+p
+vnoremap <D-v> "+p
+inoremap <D-v> <C-R><C-O>+
+cnoremap <D-v> <C-R><C-O>+
