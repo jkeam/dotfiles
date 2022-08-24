@@ -152,7 +152,6 @@ autocmd BufRead,BufNewFile Vagrantfile setfiletype ruby
 " set guioptions=aegimLt
 " set guifont=Menlo\ Regular:h16
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Neovide
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
