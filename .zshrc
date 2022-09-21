@@ -119,9 +119,9 @@ export PATH="$(yarn global bin):$PATH"
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# quarkus
-source <(quarkus completion)
-
 # sdkman
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# quarkus
+source <(quarkus completion)
