@@ -131,6 +131,7 @@ endif
 " => NerdTree configs
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:NERDTreeNodeDelimiter = "\u00a0"
+let NERDTreeShowHidden=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Custom mappings
