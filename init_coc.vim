@@ -118,6 +118,11 @@ Plug 'fatih/vim-go'
 " Kotlin
 Plug 'udalov/kotlin-vim'
 
+" debug
+" let g:node_client_debug=1
+" let $NVIM_COC_LOG_LEVEL='debug'
+" let $NVIM_COC_LOG_FILE='/tmp/coc-nvim.log'
+
 " Plug configuration
 let g:airline#extensions#tabline#enabled = 1  " turn on airline
 let g:airline_theme='bubblegum'
