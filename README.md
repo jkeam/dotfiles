@@ -1,30 +1,42 @@
 # Dotfiles
+
 Collection of my dotfiles.
 
 ## Programs to install
-1.  Sublime
-  - After install:
-  - ln -s  /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 
-2.  Homebrew (OSX only)
+1. Sublime
 
-3.  Chruby and ruby-install
+    ```shell
+    ln -s  /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+    ```
 
-4.  Nvm
+2. Homebrew (OSX only)
 
-5.  Setup new ssh keys
+3. Chruby and ruby-install
 
-6.  Install golang
+4. Setup new ssh keys
 
-7.  Install rust and cargo
+5. Install golang
 
-8.  Neovim
-  - Remap esc to caps lock
-  - Install Plug
-  - `yarn global add dockerfile-language-server-nodejs intelephense`
+6. Install rust and cargo
+
+7. Neovim
+
+    ```shell
+    # Remap esc to caps lock
+    :PlugInstall
+    yarn global add dockerfile-language-server-nodejs intelephense
+    ```
+
+8. Install Alacritty
+
+    ```shell
+    cp ./alacritty.toml ~/.config/alacritty/
+    ```
 
 ## CoC
-1. https://blog.ffff.lt/posts/ale-deoplete-languageclient-vs-coc/
-2. https://github.com/neoclide/coc.nvim/wiki/Language-servers#java
-3. https://git.lmburns.com/dotfiles/raw/.config/nvim/coc-settings.json
-4. https://github.com/Gee19/dotfiles/blob/master/coc-settings.json
+
+1. [Ale vs CoC](https://blog.ffff.lt/posts/ale-deoplete-languageclient-vs-coc/)
+2. [LSP](https://github.com/neoclide/coc.nvim/wiki/Language-servers#java)
+3. [CoC](https://git.lmburns.com/dotfiles/raw/.config/nvim/coc-settings.json)
+4. [CoC](https://github.com/Gee19/dotfiles/blob/master/coc-settings.json)
