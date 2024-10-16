@@ -112,9 +112,6 @@ Plug 'ryanoasis/vim-devicons'   " nerdtree icons - nerd fonts
 " Plug 'tpope/vim-dispatch'   " async process
 Plug 'janko-m/vim-test'     " test runner
 
-" Golang plugins
-Plug 'fatih/vim-go'
-
 " Kotlin
 Plug 'udalov/kotlin-vim'
 
@@ -179,6 +176,11 @@ nnoremap Y Y
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 autocmd BufRead,BufNewFile Vagrantfile setfiletype ruby
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Auto format and add imports
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Windows GVIM specific configs
