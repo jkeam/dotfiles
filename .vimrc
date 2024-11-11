@@ -157,6 +157,7 @@ autocmd BufRead,BufNewFile Vagrantfile setfiletype ruby
 " => Neovide
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:neovide_cursor_vfx_mode = "pixiedust"
+" guifont is overriden by the config.toml
 set guifont=MesloLGS\ Nerd\ Font\ Mono:h18
 set mouse=a
 tmap <D-v> <C-w>"+

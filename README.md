@@ -26,11 +26,14 @@ Collection of my dotfiles.
     # Remap esc to caps lock
     :PlugInstall
     yarn global add dockerfile-language-server-nodejs intelephense
+    mkdir ~/.config/neovide
+    cp ./neovide.toml ~/.config/neovide/config.toml
     ```
 
 8. Install Alacritty
 
     ```shell
+    mkdir ~/.config/alacritty
     cp ./alacritty.toml ~/.config/alacritty/
     ```
 
