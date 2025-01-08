@@ -14,13 +14,15 @@ Collection of my dotfiles.
 
 3. Chruby and ruby-install
 
-4. Setup new ssh keys
+4. Install yarn
 
-5. Install golang
+5. Setup new ssh keys
 
-6. Install rust and cargo
+6. Install golang
 
-7. Neovim
+7. Install rust and cargo
+
+8. Neovim
 
     ```shell
     # Remap esc to caps lock
@@ -30,11 +32,19 @@ Collection of my dotfiles.
     cp ./neovide.toml ~/.config/neovide/config.toml
     ```
 
-8. Install Alacritty
+9. Install Alacritty
 
     ```shell
     mkdir ~/.config/alacritty
     cp ./alacritty.toml ~/.config/alacritty/
+    ```
+
+10. Install ghostty
+
+    ```shell
+    mkdir ~/.config/ghosttty
+    # notice the file gets renamed to config
+    cp ./ghostty ~/.config/ghostty/config
     ```
 
 ## CoC
