@@ -75,7 +75,7 @@ Plug 'sickill/vim-monokai'  " colorscheme
 Plug 'airblade/vim-gitgutter' " git gutter
 " Plug 'neoclide/coc.nvim'
 " Plug 'ryanoasis/vim-devicons'   " nerdtree icons - nerd fonts
-Plug 'mhinz/vim-startify'  " cool start screens
+" Plug 'mhinz/vim-startify'  " cool start screens
 
 " JavaScript plugins
 Plug 'othree/yajs.vim'
