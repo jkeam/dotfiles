@@ -22,7 +22,7 @@ Collection of my dotfiles.
 
 7. Install rust and cargo
 
-8. Neovim
+8. Neovide
 
     ```shell
     # Remap esc to caps lock
@@ -32,14 +32,21 @@ Collection of my dotfiles.
     cp ./neovide.toml ~/.config/neovide/config.toml
     ```
 
-9. Install Alacritty
+9. Neovim
+
+    ```shell
+    mkdir ~/.config/nvim
+    cp ./.vimrc ~/.config/nvim/init.vim
+    ```
+
+10. Install Alacritty
 
     ```shell
     mkdir ~/.config/alacritty
     cp ./alacritty.toml ~/.config/alacritty/
     ```
 
-10. Install ghostty
+11. Install ghostty
 
     ```shell
     mkdir ~/.config/ghosttty
