@@ -49,7 +49,9 @@ Collection of my dotfiles.
 11. Install ghostty
 
     ```shell
-    mkdir ~/.config/ghosttty
+    mkdir ~/.config/ghostty
+    # make backup
+    mv ~/.config/ghostty/config ~/.config/ghostty/config.bak
     # notice the file gets renamed to config
     cp ./ghostty ~/.config/ghostty/config
     ```
