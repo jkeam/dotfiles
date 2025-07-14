@@ -4,5 +4,4 @@ font-family = "FiraCode Nerd Font"
 font-size = 18
 window-decoration = auto
 window-theme = ghostty
-# gtk-adwaita = false
 window-padding-x = 10
