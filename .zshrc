@@ -50,6 +50,8 @@ DISABLE_AUTO_TITLE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git bundler rails ruby rake osx sublime chruby yarn node docker)
+# uncomment the next line to speed up load
+# zstyle ':omz:plugins:nvm' lazy yes
 plugins=(git)
 
 # User configuration
