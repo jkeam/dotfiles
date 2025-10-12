@@ -36,7 +36,13 @@ Collection of my dotfiles.
 
     ```shell
     mkdir ~/.config/nvim
+    # for ale
     cp ./.vimrc ~/.config/nvim/init.vim
+    # or for coc
+    # cp ./init_coc.vim ~/.config/nvim/init.vim
+    # cp ./coc-settings.json ~/.config/nvim/coc-settings.json
+    cd /home/jkeam/.local/share/nvim/plugged/coc.nvim
+    yarn install && yarn build
     ```
 
 10. Install Alacritty
