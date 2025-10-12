@@ -51,6 +51,25 @@ let g:ale_fixers = {
     \'go': ['goimports', 'gofmt'],
 \}
 
+" let g:coc_global_extensions = [
+" \ 'coc-css',
+" \ 'coc-emoji',
+" \ 'coc-eslint',
+" \ 'coc-html',
+" \ 'coc-json',
+" \ 'coc-phpls',
+" \ 'coc-prettier',
+" \ 'coc-pyright',
+" \ 'coc-tsserver',
+" \ 'coc-explorer',
+" \ 'coc-markdownlint',
+" \ 'coc-vimlsp',
+" \ 'coc-word',
+" \ 'coc-go',
+" \ 'coc-java',
+" \ 'coc-solargraph'
+" \ ]
+
 " set this to your rtp location
 set rtp+=/usr/local/bin/fzf
 
