@@ -73,6 +73,7 @@ let g:coc_global_extensions = [
 \ 'coc-word',
 \ 'coc-go',
 \ 'coc-java',
+\ 'coc-yaml',
 \ 'coc-solargraph'
 \ ]
 
