@@ -20,43 +20,7 @@ set number
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" Configure ALE - must be done before ALE is loaded
-let g:ale_sign_column_always = 1
-let g:ale_lint_on_save = 1
-let g:ale_fix_on_save = 1
-let g:ale_completion_enabled = 1
-let g:ale_lint_on_enter = 1
-let g:ale_lint_on_text_changed = 'never'
-" ruby
-" let g:ale_ruby_rubocop_executable = '~/.gem/ruby/2.6.1/bin/rubocop'
-" let g:ale_ruby_rubocop_options = '--force-exclusion'
-" let g:ale_ruby_ruby_executable = '~/.rubies/ruby-2.6.1/bin/ruby'
-
-" let g:ale_ruby_brakeman_options = ''
-" let g:ale_ruby_reek_show_context = 0
-" let g:ale_ruby_reek_show_wiki_link = 0
-
-let g:ale_linter_aliases = {
-     \'jsx': ['css', 'javascript'],
-     \'es6': ['javascript']
-\}
-let g:ale_linters = {
-      \'jsx': ['stylelint', 'eslint'],
-      \'javascript': ['eslint', 'standard']
-\}
-
-let g:ale_fixers = {
-    \'*': ['remove_trailing_lines', 'trim_whitespace'],
-    \'rust': ['rustfmt']
-\}
-" Remove fixers in favor of CoC
-" let g:ale_fixers = {
-    " \'*': ['remove_trailing_lines', 'trim_whitespace'],
-"    \'javascript': ['standard', 'eslint'],
-"    \'go': ['gofmt', 'golint', 'go vet'],
-"    \'rust': ['rustfmt']
-"\}
-
+" CoC extensions
 let g:coc_global_extensions = [
 \ 'coc-css',
 \ 'coc-emoji',
@@ -82,39 +46,30 @@ set rtp+=/usr/local/bin/fzf
 
 call plug#begin()
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim' " faster fuzzy find files
-Plug 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
-" Plug 'benmills/vimux' " tmux integration
-Plug 'tpope/vim-fugitive' " the ultimate git helper
+Plug 'junegunn/fzf.vim'     " faster fuzzy find files
+Plug 'scrooloose/nerdtree'  " file drawer, open with :NERDTreeToggle
+Plug 'preservim/vimux'      " tmux integration
+Plug 'tpope/vim-fugitive'   " the ultimate git helper
 Plug 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
-Plug 'tpope/vim-eunuch'         " shell commands
-Plug 'tpope/vim-surround'  " surround text object with stuff like brackets
+Plug 'tpope/vim-surround'   " surround text object with stuff like brackets
 Plug 'vim-airline/vim-airline' " cooler status bar for vi
 Plug 'vim-airline/vim-airline-themes' " themes for cool vi status bar
 Plug 'vim-scripts/tComment' " easy commenting
-" Plug 'rizzatti/dash.vim'    " integrate dash
-Plug 'dense-analysis/ale' " linter
-" Plug 'christoomey/vim-tmux-navigator' " VIM and Tmux integration
-Plug 'mileszs/ack.vim' " integration with ack
+Plug 'mileszs/ack.vim'      " integration with ack
 Plug 'chriskempson/base16-vim' " colorschemes
-Plug 'sickill/vim-monokai'  " colorscheme
-Plug 'airblade/vim-gitgutter' " git gutter
-" Plug 'neoclide/coc.nvim'
+Plug 'sickill/vim-monokai'     " colorscheme
+Plug 'airblade/vim-gitgutter'  " git gutter
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'ryanoasis/vim-devicons'   " nerdtree icons - nerd fonts
-" Plug 'mhinz/vim-startify'  " cool start screens
+Plug 'ryanoasis/vim-devicons'  " nerdtree icons - nerd fonts
 
 " JavaScript plugins
-" Plug 'othree/yajs.vim'
-
-" Rails plugins
-" Plug 'tpope/vim-bundler'    " bundler
-" Plug 'tpope/vim-rails'      " rails
-" Plug 'tpope/vim-dispatch'   " async process
-Plug 'janko-m/vim-test'     " test runner
+Plug 'othree/yajs.vim'
 
 " Kotlin
 Plug 'udalov/kotlin-vim'
+
+" Golang plugins
+Plug 'fatih/vim-go'
 
 " debug
 " let g:node_client_debug=1

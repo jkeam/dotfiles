@@ -77,33 +77,22 @@ call plug#begin()
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim' " faster fuzzy find files
 Plug 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
-Plug 'benmills/vimux' " tmux integration
+Plug 'preservim/vimux' " tmux integration
 Plug 'tpope/vim-fugitive' " the ultimate git helper
 Plug 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
-Plug 'tpope/vim-eunuch'         " shell commands
 Plug 'tpope/vim-surround'  " surround text object with stuff like brackets
 Plug 'vim-airline/vim-airline' " cooler status bar for vi
 Plug 'vim-airline/vim-airline-themes' " themes for cool vi status bar
 Plug 'vim-scripts/tComment' " easy commenting
-Plug 'rizzatti/dash.vim'    " integrate dash
 Plug 'dense-analysis/ale' " linter
-Plug 'christoomey/vim-tmux-navigator' " VIM and Tmux integration
 Plug 'mileszs/ack.vim' " integration with ack
 Plug 'chriskempson/base16-vim' " colorschemes
 Plug 'sickill/vim-monokai'  " colorscheme
 Plug 'airblade/vim-gitgutter' " git gutter
-" Plug 'neoclide/coc.nvim'
-" Plug 'ryanoasis/vim-devicons'   " nerdtree icons - nerd fonts
-" Plug 'mhinz/vim-startify'  " cool start screens
+Plug 'ryanoasis/vim-devicons'   " nerdtree icons - nerd fonts
 
 " JavaScript plugins
 Plug 'othree/yajs.vim'
-
-" Rails plugins
-Plug 'tpope/vim-bundler'    " bundler
-Plug 'tpope/vim-rails'      " rails
-Plug 'tpope/vim-dispatch'   " async process
-Plug 'janko-m/vim-test'     " test runner
 
 " Golang plugins
 Plug 'fatih/vim-go'
