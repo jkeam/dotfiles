@@ -90,8 +90,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # chruby
 # linux
-# source /usr/local/opt/chruby/share/chruby/chruby.sh
-# source /usr/local/opt/chruby/share/chruby/auto.sh
+# source source /usr/local/share/chruby/chruby.sh
 # mac
 source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
 source /opt/homebrew/opt/chruby/share/chruby/auto.sh
