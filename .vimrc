@@ -111,14 +111,13 @@ filetype plugin indent on    " required
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-syntax on
-
 set t_Co=256
 
 " Access colors present in 256 colorspace
 let base16colorspace=256
 
 set background=dark
+syntax enable
 colorscheme monokai
 " if unable to find monokai, can use default-dark
 " or can use base16 theme below
