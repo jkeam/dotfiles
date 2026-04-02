@@ -46,6 +46,7 @@ Collection of my dotfiles.
     yarn install && yarn build
     # for neovim kickstart
     git clone git@github.com:jkeam/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim-kickstart
+    # brew install tree-sitter-cli on a mac
     # start this version using nvim-kickstart
     ```
 
