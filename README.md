@@ -35,6 +35,7 @@ Collection of my dotfiles.
 9. Neovim
 
     ```shell
+    # for traditional setup
     mkdir ~/.config/nvim
     # for ale
     cp ./.vimrc ~/.config/nvim/init.vim
@@ -43,6 +44,9 @@ Collection of my dotfiles.
     # cp ./coc-settings.json ~/.config/nvim/coc-settings.json
     cd /home/jkeam/.local/share/nvim/plugged/coc.nvim
     yarn install && yarn build
+    # for neovim kickstart
+    git clone git@github.com:jkeam/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim-kickstart
+    # start this version using nvim-kickstart
     ```
 
 10. Install Alacritty

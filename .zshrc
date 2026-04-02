@@ -104,6 +104,7 @@ export PATH="$PATH:$GOBIN"
 export EDITOR=nvim
 alias vim=nvim
 alias vi=nvim
+alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
 
 # pretty history
 export HISTTIMEFORMAT='%F %T '
