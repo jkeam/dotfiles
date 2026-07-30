@@ -67,6 +67,13 @@ Collection of my dotfiles.
     cp ./ghostty ~/.config/ghostty/config
     ```
 
+12. Install OpenCode
+
+    ```shell
+    curl -fsSL https://opencode.ai/install | bash
+    cp ./opencode.json ~/.config/opencode/
+    ```
+
 ## CoC
 
 1. [Ale vs CoC](https://blog.ffff.lt/posts/ale-deoplete-languageclient-vs-coc/)
